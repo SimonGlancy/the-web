@@ -1,4 +1,16 @@
-<h1> "My name is Apple <%= @name %>" </h1 >
+<% if @name %>
+<h1> "My name is <%= @name %>" </h1 >
+<% end %>
+<form action="/named-cat">
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" name="name" />
+    <input type="submit" value="this kills the kitten">
+  </div>
+
+
+</form>
+
 <div style="border:5px Dashed Red; width: 600px; height: 300px;">
 <img src=http://bit.ly/1eze8aE >
 </div>
